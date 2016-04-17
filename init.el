@@ -66,7 +66,22 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; Cargo - rust package manager
+    cargo
+
+    ;; company complete anything
+    company
+
+    ;; Rust mode
+    rust-mode
+
+    ;; Racer
+    racer
+
+    ;; flycheck rust
+    flycheck-rust))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
