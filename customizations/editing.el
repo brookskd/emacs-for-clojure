@@ -70,3 +70,6 @@
     (quit nil)))
 
 (setq electric-indent-mode nil)
+
+;; company
+(setq company-tooltip-align-annotations t)
