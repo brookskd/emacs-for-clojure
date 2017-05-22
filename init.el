@@ -5,7 +5,7 @@
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("marmalade" . "https://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
@@ -94,7 +94,19 @@
 
     ;; flycheck rust
     flycheck
-    flycheck-rust))
+    flycheck-rust
+
+    ;; Python
+    elpy
+    py-autopep8
+    ein
+
+    ;; Emacs Speaks Statistics
+    ess
+
+    ;; Julia-mode
+    julia-mode
+    ))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -159,4 +171,6 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-pkgbuild.el")
+(load "setup-python.el")
+(load "setup-ess.el")
 (put 'dired-find-alternate-file 'disabled nil)
